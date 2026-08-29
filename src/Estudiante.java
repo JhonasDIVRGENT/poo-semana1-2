@@ -30,4 +30,7 @@ public class Estudiante {
     public void mostrarInfo() {
         System.out.println("Estudiante: " + nombre + ", codigo: " + codigo + ", nota: " + nota);
     }
+    public boolean estaAprobado(){
+        return nota>=12.5; 
+    } 
 }

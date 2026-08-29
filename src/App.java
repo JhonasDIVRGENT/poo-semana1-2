@@ -19,5 +19,6 @@ public class App {
         estudiante1.mostrarInfo();
         estudiante2.mostrarInfo();
         System.out.println("Total de estudiantes: " + Estudiante.getTotalEstudiantes());
+        
     }
 }
