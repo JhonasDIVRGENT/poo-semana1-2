@@ -1,34 +1,33 @@
-public class Estudiante{
-    private String nombre ;
-    private int codigo ;
-    private double nota ;
-
-    //variabel estatica
+public class Estudiante {
+    private String nombre;
+    private int codigo;
+    private double nota;
     private static int totalEstudiantes = 0;
-    // constructor
 
-    public Estudiante (String  nombre , int codigo , double nota){
-        this.nombre = nombre ;
-        this.codigo = codigo ;
-        this.nota = nota ;
+    public Estudiante(String nombre, int codigo, double nota) {
+        this.nombre = nombre;
+        this.codigo = codigo;
+        this.nota = nota;
         totalEstudiantes++;
     }
 
-    //getter y setter
-    public String getNombre(){
-        return  nombre;
-    }
-    public  double  getNota(){
-        return  nota;
+    public String getNombre() {
+        return nombre;
     }
 
-    //metodo static
-    public static int getTotalEstudiantes () {
-        return  totalEstudiantes;
-    }
-    //metodo 
-    public void mostrarInfo( ){
-        System.out.println("Estudiantes : " + nombre + " nota: " + nota);
+    public int getCodigo() {
+        return codigo;
     }
 
+    public double getNota() {
+        return nota;
+    }
+
+    public static int getTotalEstudiantes() {
+        return totalEstudiantes;
+    }
+
+    public void mostrarInfo() {
+        System.out.println("Estudiante: " + nombre + ", codigo: " + codigo + ", nota: " + nota);
+    }
 }
