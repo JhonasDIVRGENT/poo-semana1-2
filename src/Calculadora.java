@@ -17,6 +17,17 @@ public class Calculadora {
         return sumar(a, b) + c;
     }
 
+    public int restar(int a, int b){
+        int resta = a - b;
+        totalOperaciones++;
+        historial += a + "-" + b + "=" + resta + "\n";
+        return resta;
+    }
+
+    public int resta(int a, int b, int c){
+        return restar(a, b) - c;
+    }
+
     public static int getTotalOperaciones() {
         return totalOperaciones;
     }

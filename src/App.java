@@ -5,9 +5,11 @@ public class App {
 
         int suma1 = calculadora.sumar(5, 3);
         int suma2 = calculadora.sumar(10, 2, 4);
+        int resta1 = calculadora.resta(10, 2, 5);
 
         System.out.println("Resultado 5 + 3 = " + suma1);
         System.out.println("Resultado 10 + 2 + 4 = " + suma2);
+        System.out.println("Resultado 10 - 2 - 5 = " + resta1);
         System.out.println("Total de operaciones: " + Calculadora.getTotalOperaciones());
         calculadora.mostrarHistorial();
 
