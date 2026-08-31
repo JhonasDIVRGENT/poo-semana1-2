@@ -22,5 +22,24 @@ public class App {
         estudiante2.mostrarInfo();
         System.out.println("Total de estudiantes: " + Estudiante.getTotalEstudiantes());
         
+        System.out.println();
+System.out.println("=== Demo de Sistema Contable ===");
+
+SistemaContable empresa = new SistemaContable(
+    "Empresa ABC",
+    "20123456789",
+    10000,
+    4000
+);
+
+System.out.println("Empresa: " + empresa.getNombreEmpresa());
+System.out.println("RUC: " + empresa.getRuc());
+System.out.println("Ingresos: S/ " + empresa.getIngresos());
+System.out.println("Egresos: S/ " + empresa.getEgresos());
+System.out.println("Saldo: S/ " + empresa.getSaldo());
+
+System.out.println("Total de registros contables: "
+        + SistemaContable.getTotalRegistros());
     }
+
 }
